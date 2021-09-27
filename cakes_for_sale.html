@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./CSS/specialcakesstyles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cakes for sale</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <a href="./index.html">
+          <img
+            src="./images/logo.png"
+            alt="Special Cakes for All Occasions logo"
+        /></a>
+      </div>
+
+      <div class="headernav">
+        <a href="index.html">Home</a>
+        <a href="./cakes_for_sale.html" id="headernav-active">Cakes for sale</a>
+        <a href="./about.html">About</a>
+        <a href="./contact_us.html">Contact us</a>
+      </div>
+    </header>
+
+    <section class="main">
+      <div class="main-banner">
+        <img
+          src="./images/web_images/rowofcupcakes1200.jpg"
+          alt="Yummy cupcakes in a row"
+        />
+      </div>
+      <h1 class="intro">Cakes for sale</h1>
+
+      <div class="container-cakes-1">
+        <div class="cakes-for-sale-1">
+          <a href="./images/original_images/large/specialOccasion900.jpg" target="_blank">
+            <img
+              src="./images/original_images/small/specialOccasion300.jpg"
+              alt="Vanilla cake topped with flowers"
+          /></a>
+          <figcaption><h4>Specialty cakes</h4></figcaption>
+        </div>
+        <div class="cakes-for-sale-2">
+          <a href="./images/original_images/large/chocolateCake640.jpg" target="_blank">
+            <img
+              src="./images/original_images/small/chocolateCake300.jpg"
+              alt="Chocolate cake garnished with orange slices"
+          /></a>
+          <figcaption><h4>Flavoured cakes</h4></figcaption>
+        </div>
+        <div class="cakes-for-sale-3">
+          <a href="./images/original_images/large/cheeseCake640.jpg" target="_blank">
+            <img
+              src="./images/original_images/small/cheeseCake300.jpg"
+              alt="Fruit decorated
+        cheesecake"
+          /></a>
+          <figcaption><h4>Cheesecakes</h4></figcaption>
+        </div>
+      </div>
+
+      <div class="container-cakes-2">
+        <div class="cakes-for-sale-4">
+          <a href="./images/original_images/large/tiramisu640.jpg" target="_blank">
+            <img
+              src="./images/original_images/small/tiramisu300.jpg"
+              alt="Slice of tiramisu plated with chocolate sauce"
+          /></a>
+          <figcaption><h4>Brownies</h4></figcaption>
+        </div>
+        <div class="cakes-for-sale-5">
+          <a href="./images/original_images/large/cupcake640.jpg" target="_blank">
+            <img
+              src="./images/original_images/small/cupcake300.jpg"
+              alt="Iced cupcakes with berries and mint"
+          /></a>
+          <figcaption><h4>Cupcakes</h4></figcaption>
+        </div>
+        <div class="cakes-for-sale-6">
+          <a href="./images/original_images/large/macaron640.jpg" target="_blank">
+            <img
+              src="./images/original_images/small/macaron300.jpg"
+              alt="Colourful macarons stacked"
+          /></a>
+          <figcaption><h4>Macarons</h4></figcaption>
+        </div>
+      </div>
+
+      <section class="prices-orders">
+        <div>
+          <h2 class="prices-heading">Prices</h2>
+          <table style="width: 100%" class="price-table">
+            <tr>
+              <th style="width: 125px">Cake size</th>
+              <th style="width: 175px">Suitable for</th>
+              <th style="width: 125px">Price</th>
+            </tr>
+            <tr>
+              <td>Small</td>
+              <td>8-10 people</td>
+              <td>$50.00</td>
+            </tr>
+            <tr>
+              <td>Medium</td>
+              <td>10-12 people</td>
+              <td>$60.00</td>
+            </tr>
+            <tr>
+              <td>Large</td>
+              <td>16-20 people</td>
+              <td>$100.00</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="order">
+          <h2 class="order-heading">How to order</h2>
+          <p>
+            If you're interested in buying a cake for your special occasion, let
+            us know!
+          </p>
+          <style>
+            select:invalid {
+              color: grey;
+            }
+          </style>
+          <form action="mailto:specialcakes@email.com" method="POST">
+            <fieldset>
+              <legend>Full name</legend>
+              <input type="text" name="fname" id="fname" style="width: 100%" />
+            </fieldset>
+            <fieldset>
+              <legend>Email</legend>
+              <input type="email" name="email" id="email" style="width: 100%" />
+            </fieldset>
+            <fieldset>
+              <legend>Phone number</legend>
+              <input
+                type="tel"
+                name="pnumber"
+                id="pnumber"
+                style="width: 100%"
+              />
+            </fieldset>
+            <fieldset>
+              <legend>The type of cake required</legend>
+              <select
+                required
+                name="cake-type"
+                id="cake-type"
+                style="width: 100%"
+              >
+                <option value="" disabled selected hidden>
+                  Please select...
+                </option>
+                <option value="specialty-cake">Specialty cake</option>
+                <option value="flavoured-cake">Flavoured cake</option>
+                <option value="cheesecake">Cheesecake</option>
+                <option value="brownie">Brownie</option>
+                <option value="cupcake">Cupcake</option>
+                <option value="macaron">Macaron</option>
+              </select>
+            </fieldset>
+            <fieldset>
+              <legend>Date required</legend>
+              <input type="date" name="date" id="date" style="width: 100%" />
+            </fieldset>
+            <fieldset>
+              <input type="submit" value="Submit" />
+          </form>
+        </div>
+      </section>
+    </section>
+
+    <footer>
+      <div class="footer-nav">
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="./cakes_for_sale.html" id="footernav-active"
+              >Cakes for sale</a
+            >
+          </li>
+          <li>
+            <a href="./about.html">About</a>
+          </li>
+          <li>
+            <a href="./contact_us.html">Contact us</a>
+          </li>
+        </ul>
+      </div>
+      <p class="copyright">Carl Nielsen @ 2021</p>
+    </footer>
+  </body>
+</html>
